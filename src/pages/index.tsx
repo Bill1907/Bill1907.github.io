@@ -5,8 +5,8 @@ import Footer from '../components/Common/Footer'
 import Introduction from '../components/Main/Introduction'
 import CategoryList from '../components/Main/CategoryList'
 import PostList from '../components/Main/PostList'
-import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
+import { IGatsbyImageData } from 'gatsby-plugin-image'
 import { PostListItemType } from '../types/PostItem.types'
 
 type IndexPageProps = {
