@@ -3,7 +3,9 @@ import styled from '@emotion/styled'
 import GlobalStyle from '../components/Common/GlobalStyle'
 import Footer from '../components/Common/Footer'
 import Introduction from '../components/Main/Introduction'
-import CategoryList from '../components/Main/CategoryList'
+import CategoryList, {
+  CategoryListProps,
+} from '../components/Main/CategoryList'
 import PostList from '../components/Main/PostList'
 import { graphql } from 'gatsby'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
@@ -56,15 +58,13 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({
             node: {
               frontmatter: { categories },
             },
-          }: PostType,
+          },
         ) => {
-          categories.forEach(category => {
+          categories?.forEach(category => {
             if (list[category] === undefined) list[category] = 1
             else list[category]++
           })
-
           list['All']++
-
           return list
         },
         { All: 0 },
