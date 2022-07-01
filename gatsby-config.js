@@ -3,7 +3,7 @@ module.exports = {
     title: `개발 새발 블로그`,
     description: `빌어먹을 블로그 내가 개쩔게 만든다`,
     author: `Bill`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://Bill1907/Bill1907.github.io/`,
   },
   plugins: [
     {
@@ -83,7 +83,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+        siteUrl: `https://Bill1907/Bill1907.github.io/`,
         stripQueryString: true,
       },
     },
