@@ -28,12 +28,12 @@ const BackgroudImage = styled((props: GatsbyImageProps) => (
 ))`
   z-index: -1;
   width: 100%;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
-  filter: brightness(0.25);
+  filter: brightness(0.5);
 
   @media (max-width: 768px) {
-    height: 300px;
+    height: 200px;
   }
 `
 
