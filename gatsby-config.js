@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `개발 새발 블로그`,
-    description: `빌어먹을 블로그 내가 개쩔게 만든다`,
+    title: `Bill's Story`,
+    description: `정리까지 개발이다.`,
     author: `Bill`,
     siteUrl: `https://Bill1907/Bill1907.github.io/`,
   },

@@ -9,8 +9,8 @@ type IntroductionProps = {
 
 const Background = styled.div`
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  color: #ffffff;
+  background-image: linear-gradient(60deg, #fef9a7 0%, #fac213 100%);
+  color: #73777b;
 `
 
 const Wrapper = styled.div`
@@ -32,6 +32,7 @@ const Wrapper = styled.div`
 const SubTitle = styled.div`
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: 3vh;
 
   @media (max-width: 768px) {
     font-size: 15px;
@@ -56,8 +57,8 @@ const Introduction: FunctionComponent<IntroductionProps> = ({
         <ProfileImage profileImage={profileImage} />
 
         <div>
-          <SubTitle>Nice to Meet You,</SubTitle>
-          <Title>I'm Junior Frontend Developer Bill.</Title>
+          <SubTitle>Welcome!</SubTitle>
+          <Title>꾸준히 기록하고 개발하는 프론트엔드 개발자입니다!</Title>
         </div>
       </Wrapper>
     </Background>
