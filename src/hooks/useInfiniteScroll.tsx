@@ -8,10 +8,10 @@ export type useInfiniteScrollType = {
 
 const NUMBER_OF_ITEMS_PER_PAGE = 10
 
-const useInfiniteScroll = function (
+const useInfiniteScroll = (
   selectedCategory: string,
   posts: PostListItemType[],
-): useInfiniteScrollType {
+): useInfiniteScrollType => {
   const containerRef: MutableRefObject<HTMLDivElement | null> =
     useRef<HTMLDivElement>(null)
   const observer: MutableRefObject<IntersectionObserver | null> =
